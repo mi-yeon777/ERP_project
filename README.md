@@ -30,6 +30,8 @@ MgrProduct.jsx소스 참고& 4000포트에서 조회된 데이터나, 서버의 
 * useProducts.js 커스텀 훅이란?
 
 
+“제품 목록을 불러오는 기능”을 재사용 가능한 훅으로 만든 거
+
 ```
 import { useQuery } from "@tanstack/react-query";
 
