@@ -57,10 +57,20 @@ export function useProducts() {
 
 문법요소/	의미
 export function useProducts()	커스텀 훅 정의
+
+
 useQuery({...})	TanStack Query로 데이터 요청
+
+
 queryKey	캐시 키 (데이터 식별용)
+
+
 queryFn	실제 데이터를 가져오는 함수
+
+
 data: products	구조분해 + 이름 변경
+
+
 return {...}	훅에서 값 반환
 
 
