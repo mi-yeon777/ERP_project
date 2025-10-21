@@ -6,6 +6,7 @@ import About from "./pages/About.jsx";
 
 import MgrProduct from "./pages/MgrProduct.jsx";
 import MgrStore from "./pages/MgrStore.jsx";
+import ProductList from "./pages/ProductList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     element: <GlobalLayout />,
     children: [
       { index: true, element: <Home /> },
+      { path: "products", element: <ProductList /> },
       { path: "mgr/product", element: <MgrProduct /> },
       { path: "mgr/store", element: <MgrStore /> },
     ],
