@@ -76,3 +76,35 @@ data: products	구조분해 + 이름 변경
 return {...}	훅에서 값 반환
 
 
+# ERP2_3
+
+
+GlobalLayout:All링크 추가,ProductCard: id변수 추가, 
+
+
+App.jsx: { path: "products/detail/:id", element: <ProdcutDetail /> }, 추가
+
+
+* ProductDetail.jsx
+
+  
+ALL Link클릭시 list데이터 보이고, 상세보기는 텍스트만 리턴한상태.
+
+id는 제품식별자 1,2,3...
+
+product데이터를 담는 변수(상세페이지에 뿌리는 용도)
+
+```
+import { useProducts } from "@/hooks/useProducts";
+import { useParams } from "react-router-dom";
+
+export default function ProdcutDetail() {
+  const { id } = useParams();
+  const { product, isPending } = useProducts({ id });
+
+  if (isPending) return <div>로딩중</div>;
+  return <div>상세페이지 {JSON.stringify(product)}</div>;
+}
+
+```
+
