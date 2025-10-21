@@ -4,6 +4,7 @@ export default function GlobalLayout() {
     <div>
       <nav className="p-4 border-b flex gap-4">
         <Link to="/">Home</Link>
+        <Link to="/products">ALL</Link>
         <Link to="/mgr/product">상품관리</Link>
         <Link to="/mgr/store">매장관리</Link>
       </nav>

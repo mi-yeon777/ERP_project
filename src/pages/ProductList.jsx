@@ -1,16 +1,19 @@
 import { useProducts } from "@/hooks/useProducts";
+import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
-  const { title, price, rating, img } = product;
+  const { id, title, price, rating, img } = product;
   return (
-    <div className="bg-stone-100 border p-4 rounded-lg shadow">
-      <div>
-        <img src={img} className="w-[100px] h-[100px]" />
+    <Link to={`/products/detail/${id}`}>
+      <div className="bg-stone-100 border p-4 rounded-lg shadow">
+        <div>
+          <img src={img} className="w-[100px] h-[100px]" />
+        </div>
+        <div className="font-bold">{title}</div>
+        <div>{price}</div>
+        <div>{rating}점</div>
       </div>
-      <div className="font-bold">{title}</div>
-      <div>{price}</div>
-      <div>{rating}점</div>
-    </div>
+    </Link>
   );
 }
 
