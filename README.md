@@ -8,7 +8,13 @@ useProducts.js : 데이터를 가져오는 "커스텀 훅(Custom Hook)"
 
 
 # 서버 연결
-my sql사용
+* scrape 폴더의 generic-scrape.mjs : 웹 스크래핑용 소스
+
+
+백엔드(Node.js)가 MySQL과 연동 : 서버가 DB와 연결
+
+React가 백엔드에서 JSON 데이터를 받아옴 : 클라이 언트가 데이터를 요청
+
 
 # ERP2
 
