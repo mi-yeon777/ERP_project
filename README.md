@@ -1,3 +1,12 @@
+# 각 컴포넌트의 역할
+
+
+useProducts.js : 데이터를 가져오는 "커스텀 훅(Custom Hook)"
+
+
+ㄴ> MgrProduct, MrgStore.jsx : 그 데이터를 보여주는 컴포넌트
+
+
 # ERP2
 
 
@@ -107,4 +116,6 @@ export default function ProdcutDetail() {
 }
 
 ```
+
+
 
