@@ -7,6 +7,9 @@ useProducts.js : 데이터를 가져오는 "커스텀 훅(Custom Hook)"
 ㄴ> MgrProduct, MrgStore.jsx : 그 데이터를 보여주는 컴포넌트
 
 
+# 서버 연결
+my sql사용
+
 # ERP2
 
 
