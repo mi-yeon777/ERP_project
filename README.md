@@ -1,5 +1,5 @@
 # ERP3
-* 1) ProductCard.jsx
+* (1) ProductCard.jsx
 
 
 components폴더에 features폴더생성후 여기에
