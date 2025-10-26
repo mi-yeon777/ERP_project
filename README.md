@@ -20,8 +20,6 @@ export할 function fmtComma(value) {}함수와 리턴부 작업
 # ERP3_1
 GlobalLayout.jsx
 
-글로벌레이아웃.jsx
-
 경로링크 추가
 
 네비게이션바 만들기
@@ -49,3 +47,49 @@ compnents- common-features폴더에
 
 NavBar.jsx로 분리
 
+# ERP3_2
+
+* useProduct.js
+
+uesMemo임포트
+```
+  // _2 useMemo, 카테고리추가: category에 따라 필터링된 products를 메모이제이션
+  const products = useMemo(() => {
+    if (!data) return []; // 데이터가 없으면 빈 배열 반환
+    return filterByCategory(data, category || "all"); // 카테고리 필터 적용
+  }, [data, category]); // data나 category가 바뀔 때만 재계산
+
+```
+
+* ProductList.jsx
+  
+카테고리변수, 필터파라미터 추가, 맵함수 productCard 뿌리기
+
+
+* App.jsx
+ 
+{ path: "products/:category", element: <ProductList /> }추가
+
+# ERP3_3
+* ProductList.jsx
+반응형, 모바일에도 맞출수 있도록
+
+리스트 사이즈버튼 
+
+필터
+
+온클릭 핸들토글
+
+핸들토글 함수
+
+셋필터사이즈 함수
+
+셋함수
+
+배열을 객체로, 중복값만고른후, 중복값제거
+
+const next =new Set{(1,2,3,4)}
+
+ProductDetail.jsx
+
+JSON.stringify 는 문자열로 변환
