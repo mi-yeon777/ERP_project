@@ -90,6 +90,8 @@ uesMemo임포트
 
 const next =new Set{(1,2,3,4)}
 
-ProductDetail.jsx
+* ProductDetail.jsx
+
+상세보기 조회 및 장바구니에 데이터 넣기
 
 JSON.stringify 는 문자열로 변환
